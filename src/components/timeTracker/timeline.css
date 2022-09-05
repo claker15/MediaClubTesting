@@ -1,0 +1,21 @@
+.horizLine {
+    border-left: 5px solid black;
+    margin-left: 5%;
+    height: 75vh;
+    margin: 0;
+    padding: 0;
+}
+.timeLineContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+@keyframes testanimation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(70vh);
+    }
+    
+}

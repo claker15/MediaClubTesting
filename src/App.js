@@ -1,11 +1,10 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom'
-import { useEffect, useState, useCallback, useRef } from 'react';
-import Index from './components/main/Index';
 import Nav from './components/nav/nav';
 import Login from './components/login/login';
 import Profile from './components/profile/profile';
 import Group from './components/group/group';
+import GroupAlbumView from './components/album/groupAlbumView';
 
 function App() {
 
@@ -18,7 +17,8 @@ function App() {
             <Route path='/' element={<Profile/>}/>
             <Route path='/login' element={<Login/>}/>
             <Route path='/group' element={<Group/>}/>
-          </Routes>`
+            <Route path='/group/:groupid/album/:albumid' element={<GroupAlbumView/>}/>
+          </Routes>
         </div>
       </div>
     );

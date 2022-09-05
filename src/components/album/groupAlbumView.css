@@ -1,0 +1,12 @@
+.albumViewContainer {
+    display: flex;
+    flex-direction: row;
+}
+.sidebar {
+    width: 20%;
+    height: 85vh;
+}
+.tracker {
+    
+    height: 85vh;
+}
